@@ -10,7 +10,8 @@ function InputSection(props) {
     e.target.select();
   };
   const handleChange = e => {
-    if (props.value.length < 24) {
+    console.log(e.currentTarget);
+    if (e.target.value.length <= 24) {
       props.dispatch(updateInput(e.target.value));
     }
   };
