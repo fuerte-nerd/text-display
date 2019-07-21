@@ -10,7 +10,7 @@ function InputSection(props) {
     e.target.select();
   };
   const handleChange = e => {
-    if(props.value.length < 24){
+    if (props.value.length < 24) {
       props.dispatch(updateInput(e.target.value));
     }
   };
@@ -39,7 +39,7 @@ function InputSection(props) {
         <Input
           type="text"
           style={{
-            textAlign: 'center'
+            textAlign: "center"
           }}
           onChange={handleChange}
           onKeyPress={e => (e.key === "Enter" ? handleClick() : null)}
