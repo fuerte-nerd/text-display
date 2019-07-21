@@ -1,0 +1,32 @@
+$primary: #ebecf3;
+$secondary: #21d4fd;
+$tertiary: #b721ff;
+
+$theme-colors: (
+  "primary": $primary
+);
+
+$input-bg: rgba($tertiary, 0.15);
+$input-focus-bg: rgba($tertiary, 0.2);
+$input-color: $primary;
+$input-placeholder-color: darken($primary, 20%);
+
+// @import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+@import "../node_modules/bootstrap/scss/utilities";
+
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/buttons";
+@import "../node_modules/bootstrap/scss/forms";
+@import "../node_modules/bootstrap/scss/type";
+
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+body {
+  font-family: "Roboto", cursive;
+  background-color: #21d4fd;
+  background-image: linear-gradient(117deg, $secondary 0%, $tertiary 100%);
+}
